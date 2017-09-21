@@ -5,6 +5,7 @@ using LuaInterface;
 
 using BindType = ToLuaMenu.BindType;
 using System.Reflection;
+using UnityGameFramework.Runtime;
 
 public static class CustomSettings
 {
@@ -144,6 +145,29 @@ public static class CustomSettings
         _GT(typeof(BlendWeights)),           
         _GT(typeof(RenderTexture)),
         _GT(typeof(Resources)),        
+
+        #region Unity Game Framework
+
+        _GT(typeof(BaseComponent)),
+        _GT(typeof(DataNodeComponent)),
+        _GT(typeof(DataTableComponent)),
+        _GT(typeof(DebuggerComponent)),
+        _GT(typeof(DownloadComponent)),
+        _GT(typeof(EntityComponent)),
+        _GT(typeof(EventComponent)),
+        _GT(typeof(FsmComponent)),
+        _GT(typeof(LocalizationComponent)),
+        _GT(typeof(NetworkComponent)),
+        _GT(typeof(ObjectPoolComponent)),
+        _GT(typeof(ProcedureComponent)),
+        _GT(typeof(ResourceComponent)),
+        _GT(typeof(SceneComponent)),
+        _GT(typeof(SettingComponent)),
+        _GT(typeof(SoundComponent)),
+        _GT(typeof(UIComponent)),
+        _GT(typeof(WebRequestComponent)),
+
+        #endregion Unity Game Framework
     };
 
     public static List<Type> dynamicList = new List<Type>()
