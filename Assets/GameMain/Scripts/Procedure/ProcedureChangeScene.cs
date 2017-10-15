@@ -74,7 +74,12 @@ namespace StarForce
 
             base.OnLeave(procedureOwner, isShutdown);
         }
-
+        /// <summary>
+        /// 切换场景的流程
+        /// </summary>
+        /// <param name="procedureOwner"></param>
+        /// <param name="elapseSeconds"></param>
+        /// <param name="realElapseSeconds"></param>
         protected override void OnUpdate(ProcedureOwner procedureOwner, float elapseSeconds, float realElapseSeconds)
         {
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
