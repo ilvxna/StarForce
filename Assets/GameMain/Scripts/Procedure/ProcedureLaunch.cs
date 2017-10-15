@@ -48,7 +48,7 @@ namespace StarForce
 
             ChangeState<ProcedureSplash>(procedureOwner);
         }
-
+        #region OnEnter初始化
         private void InitLanguageSettings()
         {
             if (GameEntry.Base.EditorResourceMode && GameEntry.Base.EditorLanguage != Language.Unspecified)
@@ -141,5 +141,6 @@ namespace StarForce
 
             Log.Info("Init sound settings complete.");
         }
+#endregion
     }
 }

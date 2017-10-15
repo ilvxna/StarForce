@@ -93,7 +93,7 @@ namespace StarForce
                 ChangeState<ProcedureMain>(procedureOwner);
             }
         }
-
+        #region 事件回调
         private void OnLoadSceneSuccess(object sender, GameEventArgs e)
         {
             LoadSceneSuccessEventArgs ne = (LoadSceneSuccessEventArgs)e;
@@ -144,5 +144,6 @@ namespace StarForce
 
             Log.Info("Load scene '{0}' dependency asset '{1}', count '{2}/{3}'.", ne.SceneAssetName, ne.DependencyAssetName, ne.LoadedCount.ToString(), ne.TotalCount.ToString());
         }
+#endregion
     }
 }

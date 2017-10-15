@@ -8,7 +8,7 @@ namespace StarForce
 {
     public abstract class UGuiForm : UIFormLogic
     {
-        public const int DepthFactor = 100;
+        private const int DepthFactor = 100;
         private const float FadeTime = 0.3f;
 
         private static Font s_MainFont = null;

@@ -59,7 +59,7 @@ namespace StarForce
 
             ChangeState<ProcedureChangeScene>(procedureOwner);
         }
-
+        #region OnEnter事件处理
         private void PreloadResources()
         {
             // Preload data tables
@@ -110,7 +110,9 @@ namespace StarForce
                     Log.Error("Can not load font '{0}' from '{1}' with error message '{2}'.", fontName, assetName, errorMessage);
                 }));
         }
+        #endregion
 
+        #region 事件回调
         private void OnLoadDataTableSuccess(object sender, GameEventArgs e)
         {
             LoadDataTableSuccessEventArgs ne = (LoadDataTableSuccessEventArgs)e;
@@ -156,5 +158,6 @@ namespace StarForce
 
             Log.Error("Can not load dictionary '{0}' from '{1}' with error message '{2}'.", ne.DictionaryName, ne.DictionaryAssetName, ne.ErrorMessage);
         }
+#endregion
     }
 }
