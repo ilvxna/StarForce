@@ -5,7 +5,7 @@ using GameFramework.Procedure;
 using UnityEngine;
 namespace StarForce
 {
-    public class ProcedureLevelSelect : ProcedureBase
+    public class ProcedureLevel : ProcedureBase
     {
         public override bool UseNativeDialog
         {
@@ -33,14 +33,11 @@ namespace StarForce
         protected override void OnLeave(IFsm<IProcedureManager> procedureOwner, bool isShutdown)
         {
             base.OnLeave(procedureOwner, isShutdown);
-            
         }
 
         protected override void OnUpdate(IFsm<IProcedureManager> procedureOwner, float elapseSeconds, float realElapseSeconds)
         {
             base.OnUpdate(procedureOwner, elapseSeconds, realElapseSeconds);
-
-            ChangeState<ProcedureMain>(procedureOwner);
         }
 
         

@@ -26,5 +26,9 @@
         /// 关于。
         /// </summary>
         AboutForm = 102,
+        /// <summary>
+        /// 关卡选择界面
+        /// </summary>
+        LevelSelectForm=103,
     }
 }
